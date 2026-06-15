@@ -1,0 +1,6 @@
+[".config/nvim"]
+    type = "git-repo"
+    url = "https://github.com/batleforc/weebo-dotfiles-nvim.git"
+    refreshPeriod = "168h"
+    [".config/nvim".pull]
+        args = ["--ff-only"]
