@@ -8,6 +8,7 @@ gitleaks = "latest"
 cocogitto = "latest"
 "kkrew:tree" = "latest"
 claude = "latest"
+"github:janosmiko/lfk" = "latest"
 
 [plugins]
 kkrew = "https://github.com/soupglasses/mise-krew"
