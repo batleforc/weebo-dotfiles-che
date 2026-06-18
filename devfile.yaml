@@ -3,3 +3,21 @@ metadata:
   name: weebo-test
 parent:
   uri: https://raw.githubusercontent.com/batleforc/WeeboDevImage/refs/heads/main/che-min-mise/devfile.yaml
+
+projects:
+  - name: dotfiles
+    git:
+      remotes:
+        url: https://github.com/batleforc/dotfiles.git
+  - name: weebo-dotfiles-che
+    git:
+      remotes:
+        url: https://github.com/batleforc/weebo-dotfiles-che.git
+  - name: weebo-dotfiles-nvim
+    git:
+      remotes:
+        url: https://github.com/batleforc/weebo-dotfiles-nvim.git
+  - name: weebodevimage
+    git:
+      remotes:
+        url: https://github.com/batleforc/weebodevimage.git
