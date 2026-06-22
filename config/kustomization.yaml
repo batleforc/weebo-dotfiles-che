@@ -16,7 +16,6 @@ resources:
 
 configMapGenerator:
   - name: vscode-editor-configurations
-    namespace: dev-ws-max
     files:
       - ./vscode/extensions.json
       - ./vscode/settings.json
