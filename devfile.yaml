@@ -21,3 +21,7 @@ projects:
     git:
       remotes:
         url: https://github.com/batleforc/weebodevimage.git
+  - name: weebo-skills
+    git:
+      remotes:
+        url: https://github.com/batleforc/weebo-skills.git
