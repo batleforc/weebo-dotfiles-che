@@ -11,7 +11,7 @@
   "terminal.integrated.fontLigatures.enabled": true,
   "window.header": "Weebo SI",
   "workbench.colorCustomizations": {
-    "titleBar.activeBackground": "#CCA700",
+    "titleBar.activeBackground": "#800020",
     "titleBar.activeForeground": "#ffffff"
   }
 }
