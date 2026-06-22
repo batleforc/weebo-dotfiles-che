@@ -8,7 +8,6 @@ metadata:
     controller.devfile.io/mount-to-devworkspace: "true"
     controller.devfile.io/watch-configmap: "true"
   name: workspace-userdata-gitconfig-configmap
-  namespace: dev-ws-max
 data:
   gitconfig: |
     [alias]
