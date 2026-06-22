@@ -1,0 +1,36 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  annotations:
+    controller.devfile.io/mount-as: subpath
+    controller.devfile.io/mount-path: /etc/
+  labels:
+    controller.devfile.io/mount-to-devworkspace: "true"
+    controller.devfile.io/watch-configmap: "true"
+  name: workspace-userdata-gitconfig-configmap
+  namespace: dev-ws-max
+data:
+  gitconfig: |
+    [alias]
+      co="checkout"
+      br="branch"
+      ci="commit"
+      st="status"
+      qc="!git add . && git commit && git push"
+      qq="!git add . && git commit"
+    [pull]
+      rebase="true"
+    [core]
+      editor="vim"
+    [init]
+      defaultBranch="main"
+    [user]
+      name="Max Batleforc"
+      email="maxleriche.60@gmail.com"
+      signingkey="25D243AB4B6AC9E7"
+    [gpg]
+      program="gpg2"
+    [commit]
+      gpgsign="true"
+    [tag]
+      gpgsign="true"

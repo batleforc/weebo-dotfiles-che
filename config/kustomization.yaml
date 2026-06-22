@@ -12,6 +12,7 @@ generatorOptions:
 
 resources:
   - env-var.yaml
+  - gitconfig.yaml
 
 configMapGenerator:
   - name: vscode-editor-configurations
