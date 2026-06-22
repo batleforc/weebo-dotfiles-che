@@ -1,0 +1,17 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredLightColorTheme": "Vitesse Light",
+  "workbench.preferredDarkColorTheme": "Vitesse Dark",
+  "workbench.colorTheme": "Vitesse Dark",
+  "editor.fontFamily": "'FiraCode Nerd Font', 'FiraCode NF', 'Droid Sans Mono', 'Noto Color Emoji', monospace",
+  "editor.fontLigatures": true,
+  "gitlens.plusFeatures.enabled": false,
+  "editor.guides.bracketPairs": true,
+  "terminal.integrated.fontLigatures.enabled": true,
+  "window.header": "Weebo SI",
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#CCA700",
+    "titleBar.activeForeground": "#ffffff"
+  }
+}

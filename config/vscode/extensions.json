@@ -1,0 +1,18 @@
+{
+    "recommendations": [
+        "aaron-bond.better-comments",
+        "formulahendry.auto-rename-tag",
+        "usernamehw.errorlens",
+        "tamasfe.even-better-toml",
+        "eamodio.gitlens",
+        "nhoizey.gremlins",
+        "oderwat.indent-rainbow",
+        "pflannery.vscode-versionlens",
+        "redhat.vscode-yaml",
+        "editorconfig.editorconfig",
+        "pkief.material-icon-theme",
+        "antfu.browse-lite",
+        "naumovs.color-highlight",
+        "antfu.theme-vitesse"
+    ]
+}

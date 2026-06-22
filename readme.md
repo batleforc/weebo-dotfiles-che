@@ -32,3 +32,9 @@ Base image can be found in the repo [WeeboDevImage](https://github.com/batleforc
 [Go to Eclipse Che](https://cde.batleforc.fr#https://github.com/batleforc/weebo-dotfiles-che.git)
 
 [Go to Redhat DevSpaces Sandbox](https://workspaces.openshift.com/#https://github.com/batleforc/weebo-dotfiles-che.git)
+
+### Customise your VsCode IDE
+
+- [Eclipse Che DOC](https://eclipse.dev/che/docs/stable/administration-guide/editor-configurations-for-microsoft-visual-studio-code/)
+
+An exemple of this configuration (the one i use), can be found in this repo in the `config` folder. I deploy it with a kustomize app.
