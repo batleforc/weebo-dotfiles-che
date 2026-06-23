@@ -9,6 +9,8 @@ cocogitto = "latest"
 "kkrew:tree" = "latest"
 claude = "latest"
 "github:janosmiko/lfk" = "latest"
+jq = "latest"
+yq = "latest"
 
 [plugins]
 kkrew = "https://github.com/soupglasses/mise-krew"
