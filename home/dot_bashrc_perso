@@ -1,2 +1,5 @@
 alias t="task"
 
+if [ -d ~/.local/share/chezmoi/default]; then
+    source ~/.local/share/chezmoi/default/main.sh
+fi
