@@ -4,6 +4,7 @@ if [ -f /etc/bash_completion.d/kubectl ]; then
 fi
 
 if [ ! -f ~/.local/share/bash-completion/completions/mise ]; then
+    mkdir -p ~/.local/share/bash-completion/completions
     mise completion bash  > ~/.local/share/bash-completion/completions/mise
 fi 
 
