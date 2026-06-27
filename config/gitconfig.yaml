@@ -33,3 +33,5 @@ data:
       gpgsign="true"
     [tag]
       gpgsign="true"
+    [credentials]
+      helper="store"
