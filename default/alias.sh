@@ -12,7 +12,7 @@ if command -v task &> /dev/null; then
     alias t="task"
 fi
 
-if command -v fzf &> /dev/null; then
+if command -v fzf &> /dev/null && command -v bat &> /dev/null; then
     alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
 fi
 
