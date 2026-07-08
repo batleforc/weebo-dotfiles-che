@@ -8,6 +8,7 @@
   "editor.fontLigatures": true,
   "gitlens.plusFeatures.enabled": false,
   "editor.guides.bracketPairs": true,
+  "terminal.integrated.fontFamily": "'FiraCode Nerd Font', 'FiraCode NF', monospace",
   "terminal.integrated.fontLigatures.enabled": true,
   "window.header": "Weebo SI",
   "workbench.colorCustomizations": {
