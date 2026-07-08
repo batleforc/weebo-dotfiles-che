@@ -1,0 +1,6 @@
+{
+  "statusLine": {
+    "type": "command",
+    "command": "input=$(cat); folder=$(echo \"$input\" | jq -r '.workspace.current_dir // .cwd' | xargs basename); model=$(echo \"$input\" | jq -r '.model.display_name'); printf '📂 %s  ★ %s' \"$folder\" \"$model\""
+  }
+}
