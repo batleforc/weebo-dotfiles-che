@@ -38,3 +38,23 @@ Base image can be found in the repo [WeeboDevImage](https://github.com/batleforc
 - [Eclipse Che DOC](https://eclipse.dev/che/docs/stable/administration-guide/editor-configurations-for-microsoft-visual-studio-code/)
 
 An exemple of this configuration (the one i use), can be found in this repo in the `config` folder. I deploy it with a kustomize app.
+
+## Claude Code
+
+### Copy / Paste from the TUI
+
+When the Claude Code TUI is running, it enables mouse mode so the terminal
+hands mouse events to the app instead of doing its normal selection. Your usual
+click-drag copy stops working as a result.
+
+To copy text out of the TUI, use the terminal's native selection by holding
+**Shift**:
+
+1. Hold **Shift** and drag with the mouse to select the text.
+2. **Keep Shift held down** and press **Ctrl+C** to copy.
+
+Releasing Shift before the copy hands the mouse back to the app, so don't let go
+until the text is on the clipboard.
+
+To paste, use **Ctrl+V**. Avoid **Ctrl+Shift+V**: since the IDE runs in the
+browser, that shortcut opens the Chrome DevTools instead of pasting.
