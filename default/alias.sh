@@ -18,3 +18,8 @@ fi
 
 # Neovim alias, taken from Omarchy's default dotfiles
 n() { if [ "$#" -eq 0 ]; then nvim .; else nvim "$@"; fi; }
+
+# Clean build/cache dirs (node_modules, target, dist) under /projects
+if [ -x "$HOME/.script/clean.sh" ]; then
+    alias clean="$HOME/.script/clean.sh"
+fi
