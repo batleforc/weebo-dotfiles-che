@@ -29,3 +29,7 @@ projects:
     git:
       remotes:
         url: https://github.com/batleforc/weebo-base.git
+  - name: weebo-che-notify
+    git:
+      remotes:
+        url: https://github.com/batleforc/weebo-che-notify

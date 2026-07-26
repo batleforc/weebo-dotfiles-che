@@ -14,5 +14,6 @@
   "workbench.colorCustomizations": {
     "titleBar.activeBackground": "#800020",
     "titleBar.activeForeground": "#ffffff"
-  }
+  },
+  "weeboBridgeNotify.osBridge.autoOpen": true
 }
