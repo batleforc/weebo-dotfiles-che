@@ -17,6 +17,9 @@ if command -v fzf &> /dev/null && command -v bat &> /dev/null; then
 fi
 
 # Neovim alias, taken from Omarchy's default dotfiles
+# /globals/bashrc aliases n='nvim': without unalias, alias expansion renames
+# the function below to nvim() at parse time -> infinite recursion -> segfault
+unalias n 2>/dev/null
 n() { if [ "$#" -eq 0 ]; then nvim .; else nvim "$@"; fi; }
 
 # Clean build/cache dirs (node_modules, target, dist) under /projects
