@@ -26,3 +26,7 @@ n() { if [ "$#" -eq 0 ]; then nvim .; else nvim "$@"; fi; }
 if [ -x "$HOME/.script/clean.sh" ]; then
     alias clean="$HOME/.script/clean.sh"
 fi
+
+if command -v claude &> /dev/null; then
+    alias claude-unsafe="claude --dangerously-skip-permissions"
+fi

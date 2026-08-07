@@ -41,6 +41,32 @@ An exemple of this configuration (the one i use), can be found in this repo in t
 
 ## Claude Code
 
+### Share the Claude session across workspaces
+
+No RWX PVC needed: generate a long-lived OAuth token once with
+`claude setup-token` (valid ~1 year), then store it in an auto-mounted
+Secret so every workspace gets it as an environment variable.
+
+```yaml
+kind: Secret
+apiVersion: v1
+metadata:
+  name: claude-token
+  namespace: dev-ws-max
+  labels:
+    controller.devfile.io/mount-to-devworkspace: 'true'
+    controller.devfile.io/watch-secret: 'true'
+  annotations:
+    controller.devfile.io/mount-as: env
+stringData:
+  CLAUDE_CODE_OAUTH_TOKEN: sk-ant-oat01-REPLACE_ME
+```
+
+Claude Code picks up `CLAUDE_CODE_OAUTH_TOKEN` automatically, so no
+`claude login` is needed in new workspaces. Don't mount
+`~/.claude/.credentials.json` instead: Claude Code rewrites it on every
+token refresh, so a read-only Secret copy goes stale almost immediately.
+
 ### Copy / Paste from the TUI
 
 When the Claude Code TUI is running, it enables mouse mode so the terminal
